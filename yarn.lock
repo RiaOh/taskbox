@@ -1097,6 +1097,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@storybook/addon-a11y@npm:8.5.6":
+  version: 8.5.6
+  resolution: "@storybook/addon-a11y@npm:8.5.6"
+  dependencies:
+    "@storybook/addon-highlight": "npm:8.5.6"
+    "@storybook/test": "npm:8.5.6"
+    axe-core: "npm:^4.2.0"
+  peerDependencies:
+    storybook: ^8.5.6
+  checksum: 10c0/379c9ebe7b2644a4f75f380ec3817d8dd55698bd3818ec12dd12821851ad722c6590d543057a774fce92ac96ed92aae8990b542e3d11a6a3c504e1622c463162
+  languageName: node
+  linkType: hard
+
 "@storybook/addon-actions@npm:8.5.6":
   version: 8.5.6
   resolution: "@storybook/addon-actions@npm:8.5.6"
@@ -1155,7 +1168,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-essentials@npm:^8.5.6":
+"@storybook/addon-essentials@npm:8.5.6":
   version: 8.5.6
   resolution: "@storybook/addon-essentials@npm:8.5.6"
   dependencies:
@@ -1186,7 +1199,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-interactions@npm:^8.5.6":
+"@storybook/addon-interactions@npm:8.5.6":
   version: 8.5.6
   resolution: "@storybook/addon-interactions@npm:8.5.6"
   dependencies:
@@ -1201,7 +1214,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-links@npm:^8.5.6":
+"@storybook/addon-links@npm:8.5.6":
   version: 8.5.6
   resolution: "@storybook/addon-links@npm:8.5.6"
   dependencies:
@@ -1262,7 +1275,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/blocks@npm:8.5.6, @storybook/blocks@npm:^8.5.6":
+"@storybook/blocks@npm:8.5.6":
   version: 8.5.6
   resolution: "@storybook/blocks@npm:8.5.6"
   dependencies:
@@ -1416,7 +1429,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/react-vite@npm:^8.5.6":
+"@storybook/react-vite@npm:8.5.6":
   version: 8.5.6
   resolution: "@storybook/react-vite@npm:8.5.6"
   dependencies:
@@ -1442,7 +1455,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/react@npm:8.5.6, @storybook/react@npm:^8.5.6":
+"@storybook/react@npm:8.5.6":
   version: 8.5.6
   resolution: "@storybook/react@npm:8.5.6"
   dependencies:
@@ -1467,7 +1480,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/test@npm:8.5.6, @storybook/test@npm:^8.5.6":
+"@storybook/test@npm:8.5.6":
   version: 8.5.6
   resolution: "@storybook/test@npm:8.5.6"
   dependencies:
@@ -2085,6 +2098,13 @@ __metadata:
   dependencies:
     possible-typed-array-names: "npm:^1.0.0"
   checksum: 10c0/d07226ef4f87daa01bd0fe80f8f310982e345f372926da2e5296aecc25c41cab440916bbaa4c5e1034b453af3392f67df5961124e4b586df1e99793a1374bdb2
+  languageName: node
+  linkType: hard
+
+"axe-core@npm:^4.2.0":
+  version: 4.10.3
+  resolution: "axe-core@npm:4.10.3"
+  checksum: 10c0/1b1c24f435b2ffe89d76eca0001cbfff42dbf012ad9bd37398b70b11f0d614281a38a28bc3069e8972e3c90ec929a8937994bd24b0ebcbaab87b8d1e241ab0c7
   languageName: node
   linkType: hard
 
@@ -3521,13 +3541,14 @@ __metadata:
   resolution: "intro-storybook-react-template@workspace:."
   dependencies:
     "@eslint/js": "npm:^9.9.0"
-    "@storybook/addon-essentials": "npm:^8.5.6"
-    "@storybook/addon-interactions": "npm:^8.5.6"
-    "@storybook/addon-links": "npm:^8.5.6"
-    "@storybook/blocks": "npm:^8.5.6"
-    "@storybook/react": "npm:^8.5.6"
-    "@storybook/react-vite": "npm:^8.5.6"
-    "@storybook/test": "npm:^8.5.6"
+    "@storybook/addon-a11y": "npm:8.5.6"
+    "@storybook/addon-essentials": "npm:8.5.6"
+    "@storybook/addon-interactions": "npm:8.5.6"
+    "@storybook/addon-links": "npm:8.5.6"
+    "@storybook/blocks": "npm:8.5.6"
+    "@storybook/react": "npm:8.5.6"
+    "@storybook/react-vite": "npm:8.5.6"
+    "@storybook/test": "npm:8.5.6"
     "@types/react": "npm:^18.3.3"
     "@types/react-dom": "npm:^18.3.0"
     "@vitejs/plugin-react": "npm:^4.3.1"
@@ -3541,7 +3562,7 @@ __metadata:
     msw-storybook-addon: "npm:^2.0.3"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
-    storybook: "npm:^8.5.6"
+    storybook: "npm:8.5.6"
     typescript: "npm:^5.5.3"
     typescript-eslint: "npm:^8.0.1"
     vite: "npm:^5.4.1"
@@ -5259,7 +5280,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"storybook@npm:^8.5.6":
+"storybook@npm:8.5.6":
   version: 8.5.6
   resolution: "storybook@npm:8.5.6"
   dependencies:
