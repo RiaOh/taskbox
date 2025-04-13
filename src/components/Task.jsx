@@ -1,6 +1,3 @@
-/** Task 컴포넌트 */
-import PropTypes from "prop-types";
-
 export default function Task({
   task: { id, title, state },
   onArchiveTask,
@@ -31,8 +28,10 @@ export default function Task({
           name="title"
           id={`title-${id}`}
           placeholder="Input title"
+          style={{ backgroundColor: "red" }}
         />
       </label>
+
       {state !== "TASK_ARCHIVED" && (
         <button
           className="pin-button"
@@ -47,14 +46,3 @@ export default function Task({
     </div>
   );
 }
-
-// 컴포넌트에 필요한 데이터 형태 명시 : propType
-Task.propTypes = {
-  task: PropTypes.shape({
-    id: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    state: PropTypes.string.isRequired,
-  }),
-  onArchiveTask: PropTypes.func,
-  onPinTask: PropTypes.func,
-};
