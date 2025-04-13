@@ -1,3 +1,4 @@
+/** Task 컴포넌트 */
 import PropTypes from "prop-types";
 
 export default function Task({
@@ -46,18 +47,14 @@ export default function Task({
     </div>
   );
 }
+
+// 컴포넌트에 필요한 데이터 형태 명시 : propType
 Task.propTypes = {
-  /** Composition of the task */
   task: PropTypes.shape({
-    /** Id of the task */
     id: PropTypes.string.isRequired,
-    /** Title of the task */
     title: PropTypes.string.isRequired,
-    /** Current state of the task */
     state: PropTypes.string.isRequired,
   }),
-  /** Event to change the task to archived */
   onArchiveTask: PropTypes.func,
-  /** Event to change the task to pinned */
   onPinTask: PropTypes.func,
 };

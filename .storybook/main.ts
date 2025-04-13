@@ -6,7 +6,7 @@ const config = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
-    "@storybook/addon-a11y",
+    "@storybook/addon-a11y", // 웹접근성 테스트
   ],
   framework: {
     name: "@storybook/react-vite",
